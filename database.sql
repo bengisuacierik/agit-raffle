@@ -1,0 +1,9 @@
+CREATE DATABASE cekilis_db;
+USE cekilis_db;
+
+CREATE TABLE katilimcilar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    isim VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    katilim_tarihi TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

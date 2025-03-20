@@ -1,0 +1,91 @@
+/* Google Font Ekle */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    background-image: url('background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sayfanın okunaklı olması için opak arka plan */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Siyah opak katman */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Başlık */
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Kazanan kutusu */
+.kazanan-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Kazanan yazısı */
+.kazanan-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Butonlar */
+button {
+    padding: 15px 25px;
+    background-color: gold;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+button:hover {
+    background-color: darkgoldenrod;
+    transform: scale(1.1);
+}
+
+/* Linkler */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
